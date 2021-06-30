@@ -1,39 +1,180 @@
-/*
-Theme Name: Netflix
-Author: Kenzie Academy
-Author URI: kenzie.com.br;
-Version: 1.0
- 
---------------------------------------------
-SUGESTÃO DE ESTRUTURAÇÃO BASE 
---------------------------------------------
-**** DECLARAÇÃO DE VARIÁVEIS
-**** BODY
-**** TOPO
-**** RODAPÉ
-**** PÁGINA INICIAL
-*/
-
 /* VARIÁVEIS */
 :root{
-  
+  --meu-fundo: #141414;
 }
 
 /*BODY*/
-	body{
-
-	}
+body{
+	font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+	background-color: var(--meu-fundo);
+}
 
 /*TOPO*/
-	header.topo{
-		
-	}
+header{
+	width: 15%;		
+}
 
-/*RODAPÉ*/
+#imgnet{
+	width: 60%;
+}
 	
 
-/*PÁGINA INICIAL*/
-	div.pg-home{
-		
+/*MAIN*/
+
+.container{
+	width: 100%;
+	height: 60vh;
+  	margin-right: auto;
+  	margin-left: auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+
+.no__ordened{
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	width: 858px;
+	padding: 0;
+	transform: translateX(1%);
+	justify-content: center;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+
+}
+
+  
+
+.no__ordened__lista{
+	display: flex;
+	width: 186px;
+	margin: 5px;
+	justify-content: center;
+}
+
+.avatar{
+	width: 90%;
+}
+
+#plus{
+	width: 130px;
+	transform: translateY(20%);
+	margin-bottom: 40px;
+}
+
+#plus:hover{
+	background-color: lightgray;
+
+}
+
+#addp{
+	display: flex;
+	justify-content: center;
+	transform: translateX(-20%);
+}
+
+figure{
+	color: lightgray;
+	text-align: center;
+	align-items: center;
+	margin-bottom: 30px;
+
+}
+
+.avatar:hover{
+	border: 2px solid white;
+	width: 95%;
+}
+
+figure:hover{
+	color: white;
+}
+
+#assistindo{
+	transform: translateX(-8%);
+}
+
+h1{
+	color: white;
+	display: flex;
+	justify-content: center;
+	transform: translateY(20%);
+}
+
+#botaum{
+	display: block;
+	position: relative;
+	width: 100%;
+	text-align: center;
+	margin-top: 15px;
+	transform: translateX(-10%);
+	
+}
+a{
+	text-decoration: none;
+	color: gray;
+	border: 2px solid gray;
+	padding: 7px 16px;
+}
+
+a:hover{
+	color: white;
+	border: 2px solid white;
+
+}
+
+
+@media (max-width: 768px) {
+	header{
+		width: 100%;
+		display: flex;
+		text-align:center;
+	}
+	
+	#figure__image{
+		width: 100%;
 	}
 
+	#imgnet{
+		width: 40%;
+	}
+
+	#addp{
+		transform: translateX(-26%);
+	}
+
+	h1{
+		transform: translateX(10%);
+	}
+
+	#botaum{
+		transform: translateX(0%);
+	}
+}

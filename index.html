@@ -1,90 +1,64 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-	<!-- META -->
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<!-- TÍTULO -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/style.css">
 	<title>Netflix</title>
-
-	<!-- CSS -->
-	<link rel="stylesheet" href="css/style.css" />
-
-	<!-- FAVICON -->
-	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" /> 
 </head>
 <body>
-	
-	<!-- CABEÇALHO -->
+
 	<header class="topo">
-		<figure>
-			<img src="img/logo.svg" alt="Netflix">
-			<figcaption>Netflix</figcaption>
-		</figure>
+		<figcaption id="figure__image">
+			<img draggable="false" id="imgnet" src="./img/logo.svg" alt="NETFLIX">
+		</figcaption>
 	</header>
 
-	<!-- PÁGINA INICIAL -->
-	<div class="pg-home">
-		
-		<section>
+	<br>
+	<br>
 
-			<header>
-				<h2>Quem está assistindo?</h2>
-			</header>
+	<main>
+		<div class="container">
+				<div id="assistindo">
+					<h1>Quem está assistindo?</h1>
+				</div>
+				<ul class="no__ordened">
+					<li class="no__ordened__lista">
+						<figcaption>
+							<img draggable="false" class="avatar" src="./img/avatar.png" alt="avatar">
+							<figure>Wallace</figure>
+						</figcaption>
+					</li>
+					
+					<li class="no__ordened__lista">
+						<figcaption>
+							<img draggable="false" class="avatar" src="./img/avatar1.png" alt="avatar1">
+							<figure>Vicente</figure>
+						</figcaption>
+					</li>
 
-			<!-- LISTA DE USUÁRIOS -->
-			<ul>
+					<li class="no__ordened__lista">
+						<figcaption>
+							<img draggable="false" class="avatar" src="./img/avatar2.png" alt="avatar2">
+							<figure>Isabella</figure>
+						</figcaption>
+					</li>
+
+					<li class="no__ordened__lista">
+						<figcaption>
+							<img draggable="false" class="avatar" id="plus" src="./img/plus-sign.png" alt="avatar3">
+							<figure id="addp">Adicionar Perfil</figure>
+						</figcaption>
+					</li>
+					<div id="botaum">
+						<a href="#">GERENCIAR PERFIS</a>
+					</div>
+				</ul>
 				
-				<!-- USUÁRIO 1 -->
-				<li>
-					<figure>
-						<img src="img/avatar.png" alt="Gabriel">
-						<figcaption>Gabriel</figcaption>
-					</figure>
-
-					<h3>Gabriel</h3>
-				</li>
-				
-				<!-- USUÁRIO 2 -->
-				<li>
-					<figure>
-						<img src="img/avatar1.png" alt="Maria">
-						<figcaption>Maria</figcaption>
-					</figure>
-
-					<h3>Maria</h3>
-				</li>
-				
-				<!-- USUÁRIO 3 -->
-				<li>
-					<figure>
-						<img src="img/avatar2.png" alt="Renato">
-						<figcaption>Renato</figcaption>
-					</figure>
-
-					<h3>Renato</h3>
-				</li>
-
-				<!-- ADICIONAR PERFIL-->
-				<li class="addPerfil">
-					<figure>
-						<img src="img/plus-sign.png" alt="Adicionar perfil">
-						<figcaption>Adicionar perfil</figcaption>
-					</figure>
-
-					<h3>Adicionar perfil</h3>
-				</li>
-
-			</ul>
-
-			<footer>
-				<button>Gerenciar Perfis</button>
-			</footer>
-
-		</section>
-
-	</div>
-
+		</div>
+	
+	</main>
+	
 </body>
 </html>
