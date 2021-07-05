@@ -81,6 +81,7 @@ header{
 
 .avatar{
 	width: 90%;
+	border: 2px solid transparent;
 }
 
 #plus{
@@ -110,7 +111,7 @@ figure{
 
 .avatar:hover{
 	border: 2px solid white;
-	width: 95%;
+	width: 90%;
 }
 
 
@@ -136,8 +137,8 @@ h1{
 	text-align: center;
 	margin-top: 15px;
 	transform: translateX(-5%);
-	
 }
+
 a{
 	text-decoration: none;
 	color: gray;
